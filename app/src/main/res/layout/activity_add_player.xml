@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlayer">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="particles.json"
+        app:lottie_loop="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="215dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="184dp"
+        android:fontFamily="sans-serif-black"
+        android:text="CHOOSE MODE"
+        android:textAlignment="center"
+        android:textColor="#72C0FD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="48dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="48dp" />
+
+    <Button
+        android:id="@+id/buttonmodenormal"
+        android:layout_width="95sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/bgmode"
+        android:drawableLeft="@drawable/xmark_solid"
+        android:drawableRight="@drawable/o_solid"
+        android:drawableTint="@color/white"
+        android:text="|"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonModeshape"
+        android:layout_width="95sp"
+        android:layout_height="50sp"
+        android:background="@drawable/bgmode"
+        android:drawableLeft="@drawable/apple_whole_solid"
+        android:drawableRight="@drawable/carrot_solid"
+        android:drawableTint="@color/white"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonmodenormal"
+        app:layout_constraintEnd_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonmodeFire"
+        android:layout_width="95sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bgmode"
+        android:drawableLeft="@drawable/fire_solid"
+        android:drawableRight="@drawable/wind_solid"
+        android:drawableTint="@color/white"
+        android:text="|"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmodenormal"
+        app:layout_constraintStart_toStartOf="@+id/buttonmodenormal"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmodenormal" />
+
+    <Button
+        android:id="@+id/buttonMode1"
+        android:layout_width="95sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bgmode"
+        android:drawableLeft="@drawable/__solid"
+        android:drawableRight="@drawable/solid0"
+        android:drawablePadding="10sp"
+        android:drawableTint="@color/white"
+        android:text="|"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmodeFire"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonmodeFire"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmodeFire" />
+
+    <Button
+        android:id="@+id/buttonModeStar"
+        android:layout_width="95sp"
+        android:layout_height="50sp"
+        android:background="@drawable/bgmode"
+        android:drawableLeft="@drawable/star_solid"
+        android:drawableRight="@drawable/clover_solid"
+        android:drawableTint="@color/white"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonmodeFire"
+        app:layout_constraintEnd_toEndOf="@+id/buttonModeshape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonModeshape" />
+
+    <Button
+        android:id="@+id/buttonModeLemons"
+        android:layout_width="95sp"
+        android:layout_height="50sp"
+        android:background="@drawable/bgmode"
+        android:drawableLeft="@drawable/lemon_solid"
+        android:drawableRight="@drawable/seedling_solid"
+        android:drawableTint="@color/white"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMode1"
+        app:layout_constraintEnd_toEndOf="@+id/buttonModeStar"
+        app:layout_constraintStart_toStartOf="@+id/buttonModeStar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Tic tac Game"
+        android:textColor="#2196F3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView" />
+
+    <TextView
+        android:id="@+id/resTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#63B9FD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModeLemons" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
