@@ -16,12 +16,22 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/testt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="particles.json"
+        app:lottie_loop="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="215dp"
         android:layout_height="37dp"
         android:layout_marginTop="184dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/simpelthread"
         android:text="CHOOSE MODE"
         android:textAlignment="center"
         android:textColor="#72C0FD"
@@ -128,12 +138,12 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:layout_width="315dp"
+        android:layout_height="97dp"
+        android:fontFamily="@font/simpelthread"
         android:text="Tic tac Game"
         android:textColor="#2196F3"
-        android:textSize="34sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
